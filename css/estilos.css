@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.direccion {
+    display: none;
+    width: 100%;
+    height: 1.5rem;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direccion i {
+    width: 1rem;
+    color: #38AE25;
+}
+
+.nombre {
+    font-size: 0.9rem;
+}
+
+header {
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.encabezado {
+    /* border: 1px solid slateblue; */
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3E1B17;
+    z-index: 30;
+}
+
+
+.logo img {
+    height: 4rem;
+}
+
+#check {
+    display: none;
+}
+
+
+.menu i {
+    color: white;
+    border-radius: 10%;
+    border: 1px solid black;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.menu i:hover {
+    cursor: pointer;
+}
+
+.slider {
+    background-color: #163a3e;
+    /* background: rgba(25, 21, 62, .8); */
+    position: absolute;
+    /* left: -28rem; */
+    left: -100%;
+    width: 100%;
+    top: 4rem;
+    transition: all 0.9s ease-in-out;
+    opacity: 90%;
+    z-index: 40;
+}
+
+#check:checked~.slider {
+    left: 0rem;
+
+}
+
+.navegacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navegacion i {
+    /* border: 1px solid red; */
+    font-size: 1.2rem;
+    border: none;
+
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion a {
+    text-align: center;
+    height: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    border-bottom: 1px solid #dddddd;
+    transition: all 300ms ease;
+}
+
+.navegacion a:hover {
+    color: #ffb341;
+    font-weight: 700;
+}
+
+.navegacion a:first-child {
+    pointer-events: none;
+    padding-top: 1.2rem;
+}
+
+.fondo {
+    position: relative;
+    background: url(../img/slide1.jpg);
+    height: calc(100vh - 4.2rem);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    z-index: -2;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.texto-1 {
+    /* border: 2px solid black; */
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 2.5rem;
+    width: 320px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.contenido-vision {
+    background: #111e47;
+    height: auto;
+    display: flex;
+    padding: 30px 0;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contenido-vision h2 {
+    padding-top: 10px;
+    color: #f1f1f7;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.linea {
+    display: inline-block;
+    background-color: #ffb341;
+    width: 100px;
+    height: 3px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.contenido-vision p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto-area {
+    font-weight: 700;
+    color: #ffb341;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenido-areas {
+    margin: 2rem auto;
+    width: 95%;
+    /* border: 10px solid red; */
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 1.5rem;
+}
+
+.tarjeta {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.tarjeta img {
+
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tarjeta p {
+    /* border: 1px solid red; */
+    /* padding:5px 0px; */
+    text-align: center;
+    width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* sección de todos los abogados */
+.abogados {
+    border: 1px solid black;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.abogados h2 {
+    margin-bottom: 8px;
+}
+
+/* Seccion consulta */
+.consultas {}
+
+.consultas h2 {
+    text-align: center;
+}
+
+
+.footer {
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    /* border: 10px solid red; */
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    grid-gap: 1.5rem;
+
+    background: black;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding-top: 3rem; */
+    font-family: 'Open Sans', sans-serif;
+    /* flex-wrap: wrap; */
+}
+
+.footer h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.footer h3 {
+    margin-top: 2rem;
+    text-align: center;
+    color: #f6c952;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.encuentranos h2 {
+    margin-bottom: 2rem;
+}
+
+.encuentranos {
+    width: 100%;
+}
+
+.encuentranos p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6rem;
+}
+
+
+.redes-sociales i {
+    text-align: center;
+    width: 100%;
+    color: #4267B2;
+    /* border: 1px solid white; */
+    margin: 1rem auto;
+    font-size: 2.5rem;
+
+}
+
+
+.copyright h4 {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    padding-bottom: 2rem;
+    border-top: 1px solid #dddddd;
+    width: 100%;
+}
+
+.items-footer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+/* 
+@media screen and (max-width:768px) {
+    .contenido-areas {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
